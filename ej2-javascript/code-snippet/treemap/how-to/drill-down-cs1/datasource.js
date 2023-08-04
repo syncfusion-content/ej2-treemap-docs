@@ -2,7 +2,7 @@
  * drill down sample
  */
 //tslint:disable
-var DrillDown = [
+var drillDown = [
     { Continent:[
        { Name: "Africa",Population: 1216130000, States: [
             { Name: "Eastern Africa",Population:410637987, Region:[				
