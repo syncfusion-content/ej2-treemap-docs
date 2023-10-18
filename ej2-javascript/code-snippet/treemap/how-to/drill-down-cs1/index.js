@@ -39,7 +39,7 @@ var treemap = new ej.treemap.TreeMap(
             var population = 0;
             for (var i = 0; i < args.treemap.layout.renderItems[0]['parent'].Continent.length; i++) {
                 population +=
-                    +args.treemap.layout.renderItems[0]['parent'].Continent[i]['data']
+                    args.treemap.layout.renderItems[0]['parent'].Continent[i]['data']
                         .Population;
             }
             header.innerHTML = 'Continent - Population : ' + population;
@@ -52,7 +52,7 @@ var treemap = new ej.treemap.TreeMap(
             var population = 0;
             if (args.treemap.layout.renderItems[0]['isDrilled']) {
                 for (var i = 0; i < args.treemap.layout.renderItems.length; i++) {
-                    population += +args.treemap.layout.renderItems[i]['data'].Population;
+                    population += args.treemap.layout.renderItems[i]['data'].Population;
                 }
                 header.innerHTML =
                     layout.children[0].children[1].innerHTML.split(']')[1] +
@@ -65,7 +65,7 @@ var treemap = new ej.treemap.TreeMap(
                     i++
                 ) {
                     population +=
-                        +args.treemap.layout.renderItems[0]['parent'].Continent[i]['data']
+                        args.treemap.layout.renderItems[0]['parent'].Continent[i]['data']
                             .Population;
                 }
                 header.innerHTML = 'Continent - Population : ' + population;
