@@ -37,11 +37,7 @@ var treemap = new ej.treemap.TreeMap(
         loaded: function (args) {
             var header = document.getElementById('header');
             var population = 0;
-            for (
-                var i = 0;
-                i < args.treemap.layout.renderItems[0]['parent'].Continent.length;
-                i++
-            ) {
+            for (var i = 0; i < args.treemap.layout.renderItems[0]['parent'].Continent.length; i++) {
                 population +=
                     +args.treemap.layout.renderItems[0]['parent'].Continent[i]['data']
                         .Population;
