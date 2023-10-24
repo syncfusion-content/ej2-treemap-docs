@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Treemap control
 
-This section explains the steps to create a simple TreeGrid and demonstrates the basic usage of the TreeGrid component using the Essential JS 2 [quickstart](https://github.com/syncfusion/ej2-quickstart.git) seed repository. This seed repository is pre-configured with the Essential JS 2 package.
+This section explains the steps to create a simple TreeGrid and demonstrates the basic usage of the TreeGrid component using the Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with the Essential JS 2 package.
 
 > This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
@@ -32,15 +32,23 @@ The following list of minimum dependencies are required to use the TreeMap contr
 
 Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
-```
-    git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
-```
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
 
 After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
 
-```
-    cd ej2-quickstart
-```
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+cd ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Add Syncfusion JavaScript packages
 
@@ -48,9 +56,13 @@ Syncfusion JavaScript (Essential JS 2) packages are available on the [npmjs.com]
 
 The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
 
-```
-    npm install
-```
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
+npm install
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Import the Syncfusion CSS styles
 
@@ -58,9 +70,13 @@ Syncfusion JavaScript controls come with [built-in themes](https://ej2.syncfusio
 
 The quickstart application is preconfigured to use the `Material` theme in the `~/src/styles/styles.css` file, as shown below: 
 
-```
-  @import "../../node_modules/@syncfusion/ej2/material.css";
-```
+{% tabs %}
+{% highlight css tabtitle="style.css" %}
+
+@import "../../node_modules/@syncfusion/ej2/material.css";
+
+{% endhighlight %}
+{% endtabs %}
 
 > You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme/) section to know more about built-in themes and CSS reference for individual controls.
 
@@ -70,7 +86,9 @@ The Essential JS2 TreeMap control can be added to the application. To get starte
 
 Add an HTML div element to act as the TreeMap element in the **index.html** file using the following code.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -89,11 +107,15 @@ Add an HTML div element to act as the TreeMap element in the **index.html** file
 </body>
 
 </html>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 Import the TreeMap control in the `app.ts` to initialize the TreeMap and append the TreeMap instance to the `#container`.
 
-```javascript
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
 import { TreeMap } from '@syncfusion/ej2-treemap';
 
 // Initialize the tree map control
@@ -101,7 +123,9 @@ let treemap: TreeMap = new TreeMap();
 
 // Render the initialized tree map
 treemap.appendTo('#container');
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 Since data source has not been bound to the tree map control, no items will be rendered. Only an empty SVG element is appended to the tree map container.
 
@@ -109,9 +133,13 @@ Since data source has not been bound to the tree map control, no items will be r
 
 The quickstart project is configured to compile and run the application in the browser. Use the following command to run the application.
 
-```
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
 npm start
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Module injection
 
@@ -162,7 +190,8 @@ The color mapping feature supports customization of item colors based on the und
 
 Legend is enabled for the tree map control by setting the visible property to true in legendSettings object and injecting the `TreeMapLegend` module using the `TreeMap.Inject(TreeMapLegend)`.
 
-```ts
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
 
 import { TreeMap } from '@syncfusion/ej2-treemap';
 let treemap: TreeMap = new TreeMap({
@@ -228,13 +257,15 @@ let treemap: TreeMap = new TreeMap({
         }
 }, '#container');
 
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Add labels
 
 Labels are added to show additional information of the items in tree map. By default, the visibility of the label is set to true. This can be customized using the showLabels property in leafItemSettings.
 
-```ts
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
 
 import { TreeMap } from '@syncfusion/ej2-treemap';
 let treemap: TreeMap = new TreeMap({
@@ -305,13 +336,15 @@ let treemap: TreeMap = new TreeMap({
         }
 }, '#container');
 
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Enable tooltip
 
 Tooltips are used when labels cannot display information due to space constraints. Tooltips can be enabled by setting the visible property to true in tooltipSettings object and injecting the `TreeMapTooltip` module using the `TreeMap.Inject(TreeMapTooltip)`.
 
-```ts
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
 
 import { TreeMap } from '@syncfusion/ej2-treemap';
 let treemap: TreeMap = new TreeMap({
@@ -385,4 +418,5 @@ let treemap: TreeMap = new TreeMap({
         },
 }, '#container');
 
-```
+{% endhighlight %}
+{% endtabs %}
