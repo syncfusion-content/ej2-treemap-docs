@@ -85,9 +85,9 @@ Add an HTML div element to act as the TreeMap element in the **index.html** file
 </head>
 
 <body>
-     <!--container which is going to render the TreeMap-->
-     <div id='container'>
-     </div>
+    <!--container which is going to render the TreeMap-->
+    <div id='container'>
+    </div>
 </body>
 
 </html>
