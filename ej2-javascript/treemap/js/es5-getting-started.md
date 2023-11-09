@@ -133,8 +133,6 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 **Individual Control Scripts:**
 
 **Syntax**
->`https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-treemap/dist/global/ej2-treemap.min.js`
->
 >`http://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 
 **Example:**
