@@ -16,7 +16,7 @@ TreeMap has built-in accessibility features like screen reading and WAI-ARIA att
 
 ## WAI-ARIA attributes
 
-The TreeMap component follows the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns to meet the accessibility. The following ARIA attributes are used in the TreeMap component:
+The TreeMap control follows the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns to meet the accessibility. The following ARIA attributes are used in the TreeMap control:
 
 | Attributes | Purpose |
 | --- | --- |
@@ -26,7 +26,7 @@ The TreeMap component follows the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/pat
 
 ## Screen reading in TreeMap
 
-Accessibility in the TreeMap component ensures that all users, regardless of ability or disability, can use screen reading. The following TreeMap elements will be read aloud using screen reading software, such as Narrator for Windows.
+Accessibility in the TreeMap control ensures that all users, regardless of ability or disability, can use screen reading. The following TreeMap elements will be read aloud using screen reading software, such as Narrator for Windows.
 
 | Elements | Description |
 | --- | --- |
@@ -36,12 +36,12 @@ Accessibility in the TreeMap component ensures that all users, regardless of abi
 
 ## Ensuring accessibility
 
-The TreeMap component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The TreeMap control's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the TreeMap component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/treemap.html) in a new window to evaluate the accessibility of the TreeMap component with accessibility tools.
+The accessibility compliance of the TreeMap control is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/treemap.html) in a new window to evaluate the accessibility of the TreeMap control with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/treemap.html" %}
 
 ## See also
 
-* [Accessibility in Syncfusion ##Platform_Name## components](../common/accessibility)
+* [Accessibility in Syncfusion ##Platform_Name## controls](../common/accessibility)
